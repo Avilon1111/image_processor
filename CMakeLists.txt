@@ -1,0 +1,18 @@
+add_executable(
+        image_processor
+        image_processor.cpp
+        src/data/color.cpp
+        src/data/image.cpp
+        src/data/matrix.cpp
+        src/filters/crop.cpp
+        src/filters/edge_detection.cpp
+        src/filters/gaussian_blur.cpp
+        src/filters/grayscale.cpp
+        src/filters/matrix_filter.cpp
+        src/filters/negative.cpp
+        src/filters/point_filter.cpp
+        src/filters/sharpening.cpp
+        src/io/bmp.cpp
+        src/pipeline.cpp
+        src/utils/args_processor.cpp
+)
