@@ -45,6 +45,7 @@ Image BMP::Load(const std::string &input_path) {
     }
     f.close();
     Image ans{bmp_info_header_.width, bmp_info_header_.height, colors};
+    delete blue_pointer;
 
     return ans;
 }
