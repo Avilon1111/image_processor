@@ -28,16 +28,16 @@ set(SOURCE_FILES
 )
 
 include_directories(
-        /include
-        /include/data
-        /include/filters
-        /include/utils
-        /include/io
-        /src
-        /src/data
-        /src/filters
-        /src/utils
-        /src/io)
+        "${PROJECT_SOURCE_DIR}/include"
+        "${PROJECT_SOURCE_DIR}/include/data"
+        "${PROJECT_SOURCE_DIR}/include/filters"
+        "${PROJECT_SOURCE_DIR}/include/utils"
+        "${PROJECT_SOURCE_DIR}/include/io"
+        "${PROJECT_SOURCE_DIR}/src"
+        "${PROJECT_SOURCE_DIR}/src/data"
+        "${PROJECT_SOURCE_DIR}/src/filters"
+        "${PROJECT_SOURCE_DIR}/src/utils"
+        "${PROJECT_SOURCE_DIR}/src/io")
 
 add_library(LIB ${SOURCE_FILES})
 
